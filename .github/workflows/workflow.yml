@@ -21,7 +21,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: build
-      - name: Format files
-        uses: npm run format
-      - name: Check syntaxis errors
-        uses: npm run lint
+      - name: Format files with prettier
+        run: npm run format
+      - name: Check syntaxis errors with eslint
+        run: npm run lint
