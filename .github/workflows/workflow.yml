@@ -25,3 +25,5 @@ jobs:
         run: npm run format
       - name: Check syntaxis errors with eslint
         run: npm run lint
+      - name: Testing
+        run: npm run test
